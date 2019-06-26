@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/nvidia.png" width="10" height"10">
+        <link rel="icon" href="images/aisha.png" width="20" height"10">
         <script src="js/jquery.js" charset="utf-8"></script>
         <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css">
