@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/index.css">
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <title>aisha</title>
+    <title>Aisha</title>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -35,7 +35,6 @@
     <div class="row">
 
 
-
       <div class="col-md-4 contenido1">
 
         <div class="col ">
@@ -53,7 +52,6 @@
 
 
       </div>
-
       <div class="col-md-8 contenido">
         <div class="col">
 
@@ -77,7 +75,7 @@
               <div class="row">
                 <div class="col-md-6 mb-3" style="margin-top: -21px;">
                   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"><!--<span class="text-danger">*</span>Empresa/Negocio--></label>
-                  <input type="text" class="form-control" id="empresa" name="empresa" placeholder="*Empresa" required>
+                  <input type="text" class="form-control" id="C.P" name="C.P" placeholder="*C.P" required>
               </div>
                   <!--<div class="invalid-feedback">
 
@@ -86,7 +84,7 @@
                   <!--div class="row"-->
                     <div class="col-md-6 mb-3" style="margin-top: -21px;">
                       <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"></label>
-                      <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+                      <input type="text" class="form-control" id="telefono" name="telefono" placeholder="*Teléfono">
                       <!--<div class="invalid-feedback">
 
                       </div>-->
@@ -102,7 +100,23 @@
 
                     </div>
                   </div>
-                  <div class="col-md-6" style="margin-top: -21px;">
+
+                  <div class=" row col-md-6" style="text-align:center;" >
+                    <div class="col form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        Soy socio
+                      </label>
+                        </div>
+                      <div class=" col form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                            No soy Socio
+                            </label>
+                          </div>
+                  </div>
+
+                  <!--<div class="col-md-6" style="margin-top: -21px;">
                     <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"></label>
                     <select class="custom-select custom-select mb-2" id="pais" name="pais">
                           <option >País</option>
@@ -355,9 +369,9 @@
                         <option value="YEM">Yemen</option>
                         <option value="ZMB">Zambia</option>
                         <option value="ZWE">Zimbabwe</option>
-                </select>
+                      </select>
 
-                  </div>
+                        </div>-->
 
 
 
@@ -392,72 +406,82 @@
 
                 </div>
 
-    <div class="row">
-    <input type="hidden" id="oculto" name="oculto">
-    </div>
-
-                <div class="row box">
-
-                    <div class="col-md-12 btnEnviar" style="margin-top: -11px;">
-                        <button onclick="enviarBtn();" class="btn-lg btn-dark">Enviar</button>
-                    </div>
-                </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
-              <!--<footer id="myFooter">
-                  <div class="">
-                      <div class="row">
-
-
-
-
-                          <div class="col-md-6"  style="text-align:center">
-                              <div class="col contacto" >
-                                <img class="logo" src="images/eclipse-logo.svg" width="300" height="300" alt="">
-                              </div>
-                          </div>
-
-
-
-
-
-
-
-                          <div class="col-md-6">
-
-                        <div class="row align-items-center" style="margin-left: auto !important; margin-right: auto !important;">
-                          <div class="col contacto" >
-                            <div class="texto1">
-                              <h5>Contacto</h5>
-                              <ul>
-                                <h6><i class="fa fa-envelope" aria-hidden="true"></i> contacto@eclipsemex.com</h6>
-                                <h6><i class="fa fa-envelope" aria-hidden="true"></i> samuel.mejia@eclipsemex.mx</h6>
-                                  <h6><i class="fa fa-phone" aria-hidden="true"></i> 55 5532.2480</h6>
-                                  <h6><i class="fa fa-phone" aria-hidden="true"></i> 55 3685.2090</h6>
-
-
-                              </ul>
-                            </div>
-                          </div>
-
-                          </div>
-
+                    <div class="row">
+                        <input type="hidden" id="oculto" name="oculto">
                         </div>
-              </footer>
--->
+
+                        <div class="row box">
+
+                          <div class="col-md-12 btnEnviar" style="margin-top: -11px;">
+                            <button onclick="enviarBtn();" class="btn-lg btn-dark">Enviar</button>
+                              </div>
+                              </div>
+
+                            </form>
+                            </div>
+                              </div>
+                              </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
   </body>
 
+  <!--<footer id="myFooter">
+      <div class="">
+          <div class="row">
 
+
+
+
+              <div class="col-md-6"  style="text-align:center">
+                  <div class="col contacto" >
+                    <img class="logo" src="images/eclipse-logo.svg" width="300" height="300" alt="">
+                  </div>
+              </div>
+
+
+
+
+
+
+
+              <div class="col-md-6">
+
+            <div class="row align-items-center" style="margin-left: auto !important; margin-right: auto !important;">
+              <div class="col contacto" >
+                <div class="texto1">
+                  <h5>Contacto</h5>
+                  <ul>
+                    <h6><i class="fa fa-envelope" aria-hidden="true"></i> contacto@eclipsemex.com</h6>
+                    <h6><i class="fa fa-envelope" aria-hidden="true"></i> samuel.mejia@eclipsemex.mx</h6>
+                      <h6><i class="fa fa-phone" aria-hidden="true"></i> 55 5532.2480</h6>
+                      <h6><i class="fa fa-phone" aria-hidden="true"></i> 55 3685.2090</h6>
+
+
+                  </ul>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+  </footer>
+
+  -->
 
   <script src="js/bootstrap.js" charset="utf-8"></script>
 
