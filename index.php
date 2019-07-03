@@ -60,7 +60,7 @@
 
 
 
-            <form class="container box" id="form-validation">
+            <form class="container box" id="form-validation" name="myForm">
               <h2>Si deseas más información, déjanos tus datos y nos pondremos en contacto a la brevedad.</h2>
               <div class="row formulario">
                 <div class="col-md-6 mb-3" style="margin-top: -21px;">
@@ -75,7 +75,7 @@
               <div class="row">
                 <div class="col-md-6 mb-3" style="margin-top: -21px;">
                   <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm"><!--<span class="text-danger">*</span>Empresa/Negocio--></label>
-                  <input type="text" class="form-control" id="C.P" name="C.P" placeholder="*C.P" required>
+                  <input type="text" class="form-control" id="cp" name="cp" placeholder="*C.P" required>
               </div>
                   <!--<div class="invalid-feedback">
 
@@ -103,14 +103,14 @@
 
                   <div class=" row col-md-6" style="text-align:center;" >
                     <div class="col form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                      <input class="form-check-input exRadio" type="radio" name="exampleRadios" id="socio" value="1">
                       <label class="form-check-label" for="exampleRadios1">
                         Soy socio
                       </label>
                         </div>
                       <div class=" col form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
+                        <input class="form-check-input exRadio" type="radio" name="exampleRadios" id="nosocio" value="0" checked>
+                          <label class="form-check-label" for="exampleRadios1" >
                             No soy Socio
                             </label>
                           </div>
@@ -492,17 +492,32 @@
 
 
   <script>
+
+    function checabtn(){
+        //var valor = document.getElementsByClassName('exRadio');
+
+
+    }
+
     function enviarBtn(){
         var nombre=document.getElementById('nombre').value;
         var apellidos=document.getElementById('apellidos').value;
-        var empresa=document.getElementById('empresa').value;
+        var cp=document.getElementById('cp').value;
         var telefono=document.getElementById('telefono').value;
         var correo=document.getElementById('correo').value;
-        var pais=document.getElementById('pais').value;
+        //var pais=document.getElementById('pais').value;
         var comentarios=document.getElementById('comentarios').value;
         var oculto=document.getElementById('oculto').value;
+        var socio = "0";
 
-        if (nombre=="" || apellidos=="" || empresa=="" || correo=="" || comentarios=="") {
+        var soc = document.getElementById('socio');
+        if(soc.checked){
+            socio = "1";
+        }else{
+            socio = "0";
+        }
+
+        if (nombre=="" || apellidos=="" || cp=="" || correo=="" || comentarios=="") {
             alert("Llenar los campos requeridos");
             console.log("Llenar los campos requeridos");
         } else{
@@ -512,10 +527,10 @@
               data: {
                   nombre: nombre,
                   apellidos: apellidos,
-                  empresa: empresa,
+                  cp: cp,
                   telefono: telefono,
                   correo: correo,
-                  pais: pais,
+                  socio: socio,
                   comentarios: comentarios,
                   oculto: oculto
               },
