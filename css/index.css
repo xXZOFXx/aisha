@@ -4,9 +4,8 @@ body{
    height: 100%;
    width: 100%;
    background-color: rgb(8,4,55);
-   background-image: url(../images/sepia1.jpg);
+   background-image: url(../images/sepia2.jpg);
    background-position: center center;
-   background-repeat: no-repeat;
    background-attachment: fixed;
 }
 
